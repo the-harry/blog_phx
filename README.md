@@ -22,7 +22,9 @@ mix credo
 mix sobelow --config
 
 # specs with cover
-mix coveralls
+mix coveralls.html
+
+xdg-open cover/excoveralls.html
 ```
 
 ## Learn more
