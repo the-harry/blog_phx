@@ -5,7 +5,7 @@ config :blog_phx, BlogPhx.Repo,
   username: "postgres",
   password: "postgres",
   database: "blog_phx_dev",
-  hostname: "postgres",
+  hostname: System.get_env("DB_HOSTNAME") || "postgres",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
