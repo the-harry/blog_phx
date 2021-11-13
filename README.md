@@ -11,6 +11,20 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
+
+## Quality
+
+```sh
+# lint
+mix credo
+
+# sec vuns
+mix sobelow --config
+
+# specs with cover
+mix coveralls
+```
+
 ## Learn more
 
   * Official website: https://www.phoenixframework.org/
