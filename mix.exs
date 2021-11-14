@@ -7,7 +7,7 @@ defmodule BlogPhx.MixProject do
     [
       app: :blog_phx,
       version: "0.1.0",
-      elixir: "~> 1.7",
+      elixir: "~> 1.11.0",
       description: "Phoenix blog.",
       source_url: @github_url,
       homepage_url: @github_url,
