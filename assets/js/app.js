@@ -13,3 +13,9 @@ import "../node_modules/materialize-css/dist/js/materialize"
 //     import socket from "./socket"
 //
 import "phoenix_html"
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.fixed-action-btn');
+  var instances = M.FloatingActionButton.init(elems, {});
+});

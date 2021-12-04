@@ -9,3 +9,9 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias BlogPhx.Posts.Post
+
+BlogPhx.Repo.insert!(Post.changeset(%Post{}, %{title: "Phoenix", description: "elixir"}))
+BlogPhx.Repo.insert!(Post.changeset(%Post{}, %{title: "Rails", description: "ruby"}))
+BlogPhx.Repo.insert!(Post.changeset(%Post{}, %{title: "Golang", description: "go"}))
