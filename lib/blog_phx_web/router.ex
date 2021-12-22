@@ -20,6 +20,8 @@ defmodule BlogPhxWeb.Router do
     get "/", PageController, :index
 
     get "posts", PostController, :index
+    post "posts", PostController, :create
+    get "posts/new", PostController, :new
     get "posts/:id", PostController, :show
   end
 
