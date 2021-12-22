@@ -14,4 +14,14 @@ defmodule BlogPhxWeb.PostController do
 
     render(conn, "show.html", post: post)
   end
+
+  def new(conn, params) do
+    # {referer_map, list} = List.pop_at(conn.req_headers, 8)
+    # {key, referer} = referer_map
+    # IO.inspect(referer)
+
+    changeset = Post.changeset(%Post{})
+
+    render(conn, "new.html", changeset)
+  end
 end

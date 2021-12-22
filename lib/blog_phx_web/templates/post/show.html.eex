@@ -1,2 +1,10 @@
-<%= @post.title %>
-<%= @post.description %>
+<div class="card hoverable">
+  <div class="card-content">
+    <p class="grey-text right">Postado em: <%= @post.inserted_at %></p>
+    <h5><%= @post.title %></h5>
+    <p class="grey-text text-darken-2"><%= @post.description %></p>
+    <%= link to: Routes.post_path(@conn, :index, class: "btn-floating left waves-effect") do %>
+      <i class="material-icons">chevron_left</i>
+    <% end %>
+  </div>
+</div>
